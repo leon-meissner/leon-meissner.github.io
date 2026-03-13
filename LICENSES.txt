@@ -1,0 +1,51 @@
+ _       _________ _______  _______  _        _______  _______  _______ 
+( \      \__   __/(  ____ \(  ____ \( (    /|(  ____ \(  ____ \(  ____ \
+| (         ) (   | (    \/| (    \/|  \  ( || (    \/| (    \/| (    \/
+| |         | |   | |      | (__    |   \ | || (_____ | (__    | (_____ 
+| |         | |   | |      |  __)   | (\ \) |(_____  )|  __)   (_____  )
+| |         | |   | |      | (      | | \   |      ) || (            ) |
+| (____/\___) (___| (____/\| (____/\| )  \  |/\____) || (____/\/\____) |
+(_______/\_______/(_______/(_______/|/    )_)\_______)(_______/\_______)
+                                                                        
+----------------------------------------------------------------------------------------------------------
+
+Used Fonts:
+
+Font: Lexend
+Author(s): Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, Héctor Gómez, Superunion
+Source(s): https://fonts.google.com/specimen/Lexend ; https://lexend.com 
+License: Open Font License
+
+----------------------------------------------------------------------------------------------------------
+
+Used Icons:
+
+Icon: java
+Author: Lineicons
+Source: https://www.freeicons.org/search?q=Java
+License: MIT License
+
+Icon: c sharp
+Author: Teenyicons
+Source: https://www.freeicons.org/search?q=C%23
+License: MIT License
+
+Icon: html
+Author: Alex Stoica
+Source: https://www.freeicons.org/search?q=HTML
+License: MIT License
+
+Icon: css
+Author: Simple
+Source: https://example.com
+License: CC0 1.0
+
+Icon: git
+Author: Lineicons
+Source: https://www.freeicons.org/search?q=GIT
+License: MIT License
+
+Icon: js square
+Author: Icons8
+Source: https://www.freeicons.org/search?q=JS
+License: MIT License

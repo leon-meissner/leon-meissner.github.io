@@ -1,0 +1,724 @@
+:root {
+    --bg-color: rgba(11,11,22,1);
+    --card-color: rgba(17, 17, 36,1);
+    --card-highlight: rgb(22, 22, 46);
+    --card2-color: rgb(25, 25, 56);
+    --card2-highlight: rgb(34, 34, 78);
+    --text-color: white;
+    --text-highlight: rgba(255, 238, 0, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Lexend', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+section {
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    scroll-margin-top: 8vh;
+}
+
+
+/* SECTION-SPECIFIC */
+#aboutme {
+    margin-top: -8vh;
+    padding-top: 8vh;
+}
+
+.section-adjust-mid {
+    justify-content: center;
+}
+
+/* HEADER */
+#header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 4vw;
+
+    position: sticky;
+    top: 0;
+
+    background-color: var(--bg-color);
+    box-shadow: 0px 10px 10px -10px rgba(0,0,0,1);
+
+    width: 105vw;
+    height: 8vh;
+    margin-left: -5vw;
+    padding: 3vh 5vw;
+    
+    z-index: 10;
+}   
+
+#headerlogo {
+    font-family: 'Lexend', sans-serif;
+    color: var(--text-color);
+    background-color: var(--card-color);
+    border-style: solid;
+    border-color: var(--text-color);
+    font-size: clamp(10px, 2vw, 100px);
+
+    display: flex;
+    align-items: center;
+    
+    padding: 1vh;
+    margin-left: 2vw;
+
+    transition: color .3s, border .3s;
+}
+
+#headerlogo:hover {
+    color: var(--text-highlight);
+    border-color: var(--text-highlight);
+}
+
+.headertext {
+    font-family: 'Lexend', sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: clamp(10px, 2vw, 100px);
+    border-radius: 10px;
+
+    position: relative;
+    margin-left: 2vw;
+    left: 5vw;
+    padding: 1vw;
+
+    transition: color .3s, background .3s;
+}
+
+.headertext:hover {
+    color: var(--text-highlight);
+    background-color: var(--card-highlight);
+}
+
+
+/* ABOUT ME */
+#shortprofile {
+    display: flex;
+    padding-left: 10vw;
+    gap: 5vw;
+}
+
+#profileimg {
+    width: 25vw;
+    max-width: 500px;
+    max-height: 500px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid white;
+
+    transition: transform .3s;
+}
+
+#profileimg:hover {
+    transform: scale(1.05);
+}
+
+#profiletext {
+    color: var(--text-color);
+    font-size: clamp(10px, 2vw, 100px);
+    padding-top: 5vh
+}
+
+
+/* PROJECTS */
+#myprojects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vw;
+    padding-left: 5vw;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .2vw;
+
+    margin-left: 2vw;
+    padding: 2vh 2vw;
+    max-width: 15vw;
+    
+    border-radius: 15px;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    font-size: clamp(15px, 1.5vw, 75px);
+
+    transition: transform .3s, background .3s;
+}
+
+.project:hover {
+    background-color: var(--card-highlight);
+
+    transform: scale(1.05);
+}
+
+.projdesc {
+    color: var(--text-color);
+    font-size: clamp(10px, 1vw, 50px);
+    text-align: center;
+}
+
+.projpic {
+    width:10vw;
+    max-width:200px;
+
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+
+/* SKILLS */
+#myskills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5vw;
+
+    padding-left: 4vw;
+}
+
+.skillcategory {
+    width:15vw;
+    max-width: 15vw;
+    height: 35vh;
+    padding: 2vh 2vw;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5vw;
+    
+    border-radius: 15px;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    font-size: clamp(15px, 1.5vw, 75px);
+}
+
+.skillcattitle {
+    grid-column: span 2;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.skill svg {
+    width: 5vw;
+    max-width: 5vw;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+
+    width: 5vw;
+    max-width: 5vw;
+    max-height: 12vw;
+    padding: 2vh 1vw;
+
+    border-radius: 15px;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    font-size: clamp(15px, 1.5vw, 75px);
+    font-weight: bold;
+
+    transition: background .3s, transform .3s;
+}
+
+.skill:hover {
+    background-color: var(--card-highlight);
+
+    transform: scale(1.05);
+}
+
+
+/* CV */
+#cvembedding {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vh;
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 6vh;
+    padding: 5vh 4vw;
+
+    background-color: var(--card-color);
+    border-radius: 30px;
+}
+
+#cvembed {
+    margin-left: 1vw;
+    width: 38vw;
+    max-width: 500px;
+    height: 75vh;
+    max-height: 750px;
+
+    border: none;
+    border-radius: 15px;
+    background-color: var(--card-color);
+
+    transition: transform .3s;
+}
+
+#cvembed:hover {
+    transform: scale(1.05);
+}
+
+#cvdownload {
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+    
+    margin-left: 10vw;
+    padding: 5vh 4vw;
+
+    border-radius: 15px;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    font-size: clamp(10px, 1.5vw, 75px);
+}
+
+.cvdownloader {
+    padding: 3vh 2vw;
+    
+    border-radius: 15px;
+    background-color: var(--card2-color);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: clamp(10px, 1.5vw, 75px);
+
+    transition: transform .3s, color .3s, background 0.3s;
+}
+
+.cvdownloader:hover {
+    background-color: var(--card2-highlight);
+    color:var(--text-highlight);
+
+    transform: scale(1.05);
+}
+
+#contactinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 30px;
+}
+
+.contactitems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vw;
+
+    padding: 2vh 4vw;
+    border-radius: 15px;
+
+    background-color: var(--card-color);
+}
+
+.contactitem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 8vw;
+    height: 8vh;
+    max-width: 18vw;
+    border-radius: 10px;
+    padding: 6vh 2vw;
+
+    background-color: var(--card2-color);
+    color: var(--text-color);
+    font-size: clamp(10px, 2vw, 75px);
+    text-decoration: none;
+
+    transition: transform .3s, color .3s, background .3s;
+}
+
+.contactitem:hover {
+    color: var(--text-highlight);
+    background-color: var(--card2-highlight);
+
+    transform: scale(1.05);
+}
+
+#feelfreetext {
+    text-align: center;
+    color: var(--text-color);
+    font-size: clamp(10px, 1.5vw, 75px);
+    text-decoration: none;
+}
+
+/* UTIL */
+.title {
+    color: white;
+    font-weight: bold;
+    font-size: clamp(10px, 3vw, 100px);
+    text-align: center;
+
+    margin-left: 5vw;
+}
+
+.seperator {
+    border-bottom-style:dashed;
+    border-bottom-width: 4px;
+    border-bottom-color: white;
+}
+
+#totop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+
+    width: 3vw;
+    height: 3vw;
+
+    
+    background-color: var(--card-color);
+    border-radius: 50%;
+    padding: 1vw 1vw;
+    border: 4px solid white;
+    text-align: center;
+
+    transition: transform .3s, color .3s, background .3s;
+}
+
+#totop:hover {
+    transform: scale(1.1);
+    background-color: var(--card-highlight);
+}
+
+#totoptxt {
+    position: relative;
+    top: 1vh;
+
+    font-size: clamp(10px, 4vw, 50px);
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+/* FOOTER */
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerbg {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+
+    width: 110%;
+    margin-bottom: -5%;
+    padding: 15px 5vw;
+
+    background-color: rgba(22, 22, 46,1);
+}
+
+#footertext {
+    color: white;
+    font-size: clamp(10px, 1vw, 100px);
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+    /* GENERAL */
+    section {
+    width: auto;
+    max-height: none;
+    height: auto;
+    min-height: 92vh;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+
+    scroll-margin-top: 1vh;
+
+    }
+
+    #aboutme {
+        margin-top: 0;
+        padding-top: 2vh;
+    }
+
+    .title {
+        font-size: clamp(10px, 7vw, 100px);
+        margin-left: 0;
+    }
+
+    .seperator {
+        width: 100%;
+        border-bottom-style:dashed;
+        border-bottom-width: 4px;
+        border-bottom-color: white;
+    }
+
+    #totop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+
+    width: 10vw;
+    height: 10vw;
+
+    
+    background-color: var(--card-color);
+    border-radius: 50%;
+    padding: 1vw 1vw;
+    border: 4px solid white;
+    text-align: center;
+
+    transition: transform .3s, color .3s, background .3s;
+    }
+
+    #totop:hover {
+        transform: scale(1.1);
+        background-color: var(--card-highlight);
+    }
+
+    #totoptxt {
+        position: relative;
+        top: .5vh;
+
+        font-size: clamp(10px, 8vw, 50px);
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+
+    /* HEADER */
+    #header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0vh;
+    
+    max-width: 98%;
+    width: 98%; 
+    margin-left: -7vw; 
+    margin-top: -.5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;  
+    height: 6vh; 
+    }
+
+    .headertext {
+        font-size: clamp(8px, 3vw, 50px); 
+        padding: 2vw;
+        margin-left: 0;
+        left: 4vw;
+        top: -0.3vh;
+    }
+
+    .headerlogo {
+        width: 8vw;
+        font-size: clamp(8px, 3vw, 50px);  
+        padding: 0;
+        margin-left: 0;
+        left: 0;
+        top: 0.5vh;
+    }
+
+
+    /* ABOUT ME */
+    #shortprofile {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+
+    padding: 2vh 0vw;
+     
+    text-align: center; 
+    }
+
+    #profileimg {
+        width: 60vw; 
+        max-width: 250px;
+    }
+
+    #profiletext {
+        font-size: clamp(12px, 4vw, 50px);  /* Kleinere Schrift */
+        padding-top: 0;
+    }
+
+
+    /* PROJECTS */
+    #myprojects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4vh;
+
+        padding-left: 0;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        width: 60vw; 
+        max-width: 80vw;
+        padding: 1vh 1vw;
+    }
+
+    .projpic {
+        width: 15vw; 
+    }
+
+    .projdesc {
+        margin-top: -1vh;
+        font-size: clamp(10px, 3vw, 30px);
+    }
+
+
+    /* SKILLS */
+    #myskills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+
+        padding-left: 0;
+    }
+
+    .skillcategory {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr, 1fr;
+        gap: .5vh;
+
+        width: 70vw;
+        max-width: none;
+        height: 20vh;
+        padding: 1vh 1vw;
+    }
+
+    .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 25vw;
+        max-width: 30vw;
+        height: 8vh;
+        max-height: 8vh;
+        padding: 1vh 1vw;
+
+        border-radius: 15px;
+        background-color: var(--card-color);
+        color: var(--text-color);
+        font-size: clamp(15px, 1.5vw, 75px);
+        font-weight: bold;
+    }
+
+    .skill svg {
+        transform: scale(1.8);
+    }
+
+
+     /* CV */
+     #cvembedding {
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+        width: 70vw;
+        margin-top: 8vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #cvembed {
+    width: 60vw;
+    height: auto
+    }
+
+    #cvdownload {
+        gap: 2vh;
+        margin-left: 0;
+        padding: 2vh 2vw;
+    }
+
+    .cvdownloader {
+        text-align: center;
+        padding: 2vh 1vw;
+        font-size: clamp(12px, 4vw, 50px);
+    }
+
+
+    /* CONTACT */
+    .contactitems {
+        flex-direction: column; 
+        gap: 2vh;
+
+        width: 70vw;
+    }
+
+    .contactitem {
+        width: 60vw;
+        max-width: none;
+        height: auto; 
+        padding: 3vh 1vw;
+
+        font-size: clamp(14px, 5vw, 50px);
+    }
+    #feelfreetext {
+        font-size: clamp(12px, 4vw, 50px);
+    }
+
+
+    /* FOOTER */
+    #footer {
+        width: 100%;
+        padding: 0;
+    }
+    
+    #footerbg {
+    width: 104%;
+    padding: 0;
+    padding-top: 1vh;
+    padding-bottom: 1vh;    
+    }
+}
