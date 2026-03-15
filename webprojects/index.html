@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Imports --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet and JS --->
+    <link rel="stylesheet" href="webproj-style.css">
+    <script src="index.js" defer></script>
+
+
+    <!-- Meta-Data --->
+    <title>Leon Meißner</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is the personal portfolio of Leon Meißner, showcasing his skills and projects in web development.">
+    <meta name="keywords" content="Leon Meißner, Portfolio, Web Development">
+    <meta name="author" content="Leon Meißner">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<template id="project-template">
+    <div class="project">
+        <a href="" style="text-decoration: none;">
+            <img class="projpic" src="../media/questionmark.png" alt="Project Image">
+            <p class="projdesc">???</p>
+        </a>
+    </div>
+</template>
+
+
+<body>
+
+    <!-- HEADER --->
+    <header id="header">
+        <a href="../index.html" style="text-decoration: none;">
+            <span id="headerlogo">LM</span>
+        </a>
+
+        <span class="headertext" style="margin-left: -8vw;">Web Projects</span>
+
+        <nav id="nav">
+            <a href="#basics" class="navtext">Basic Projects</a>
+            <a href="#advanced" class="navtext">Advanced Projects</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT --->
+    <main>
+
+
+    <section id="basics">
+        <div class="title">Basic Projects:</div>
+        <div class="content">
+            <project-prefab></project-prefab>
+            <project-prefab></project-prefab>
+            <project-prefab></project-prefab>
+            <project-prefab></project-prefab>
+            <project-prefab></project-prefab>
+            <project-prefab></project-prefab>
+            <project-prefab></project-prefab>
+            <project-prefab></project-prefab>
+        </div>
+    </section>
+
+    <div class="seperator"></div>
+
+    <section id="advanced">
+        <div class="title">Advanced Projects:</div>
+        <div class="content">
+            <project-prefab></project-prefab>
+            <project-prefab></project-prefab>
+            <project-prefab></project-prefab>
+            <project-prefab></project-prefab>
+            <project-prefab></project-prefab>
+            <project-prefab></project-prefab>
+            <project-prefab></project-prefab>
+            <project-prefab></project-prefab>
+        </div>
+    </section>
+
+
+    </main>
+
+    <!-- FOOTER --->
+    <footer id="footer">
+        <div id="footerbg">
+            <p id="footertext">&copy; 2026 Leon Meißner</p>
+            <p id="footertext">|</p>
+            <a id="footertext" href="/LICENSES.txt">Licenses</a>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
