@@ -85,7 +85,7 @@ section {
 .headertext {
     font-family: 'Lexend', sans-serif;
     color: var(--text-color);
-    text-decoration: none;
+    text-decoration: underline;
     font-size: clamp(10px, 2vw, 100px);
     border-radius: 10px;
 
