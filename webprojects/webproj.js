@@ -26,7 +26,7 @@ class projPrefab extends HTMLElement {
         const link = this.getAttribute("link") || "";
 
         this.innerHTML = `
-            <a href="${link}" class="projlink" target="_blank" style="text-decoration: none;">
+            <a href="${link}" class="projlink" target="_self" style="text-decoration: none;">
                 <div class="project">
                     <img class="projpic" src="${pic}" alt="${alt}">
                     <p class="projdesc">${desc}</p>

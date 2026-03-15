@@ -125,7 +125,7 @@ section {
     color: var(--text-color);
     text-decoration: underline;
     font-size: clamp(10px, 2vw, 75px);
-    border-radius: 10px;
+    border-radius: 2vw;
 
     padding: 1vw;
 
@@ -212,4 +212,124 @@ section {
 #footertext {
     color: white;
     font-size: clamp(10px, 1vw, 100px);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+    /* GENERAL */
+    section {
+    width: auto;
+    max-height: none;
+    height: auto;
+    min-height: 92vh;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+
+    scroll-margin-top: 1vh;
+
+    }
+
+    #main {
+        margin-top: 0;
+        padding-top: 2vh;
+    }
+
+    .title {
+        font-size: clamp(10px, 7vw, 100px);
+        margin-left: 0;
+        margin-top: 0vh;
+        padding-bottom: 2vh;
+    }
+
+    .seperator {
+        width: 100%;
+        border-bottom-style:dashed;
+        border-bottom-width: 4px;
+        border-bottom-color: white;
+    }
+
+
+    /* HEADER */
+    #header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        gap: 0vh;
+        
+        max-width: 98%;
+        width: 98%; 
+        margin-left: -7vw; 
+        margin-top: -.5vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;  
+        height: 6vh; 
+    }
+
+    .headertext {
+        position: relative;
+        font-size: clamp(8px, 3vw, 50px); 
+        padding: 2vw;
+        margin-left: 0;
+        left: 8vw;
+    }
+
+    .headerlogo {
+        width: 8vw;
+        font-size: clamp(8px, 3vw, 50px);  
+        padding: 0;
+        margin-left: 0;
+        left: 0;
+        top: 0.5vh;
+    }
+
+    #nav {
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+
+        position: absolute;
+        right: 6vw;
+    }
+
+    .navtext {
+        padding: 2vw;
+    }
+
+
+    /* PROJECTS */
+    .content {
+        grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+        gap: 2vh;
+        
+        width: 80%;
+        padding: 1vw;
+    }
+
+    .project {
+        padding: 2vh 1vw;
+        max-width: 35vw;
+        height: 12vh;
+        border-radius: 4vh;
+    }
+
+    .projpic {
+        border: 1vw solid white;
+    }
+
+
+    /* FOOTER */
+    #footer {
+        width: 100%;
+        padding: 0;
+    }
+    
+    #footerbg {
+        width: 104%;
+        padding: 0;
+        padding-top: 1vh;
+        padding-bottom: 1vh;    
+    }
 }
